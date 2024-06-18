@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ee7474;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #faa6a6;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 100%;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 150px;
+            border-radius: 50%;
+        }
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #313131;
+        }
+        input[type="text"], input[type="password"], input[type="submit"], input[type="color"] {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: calc(100% - 22px);
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        p {
+            text-align: center;
+            margin-top: 10px;
+        }
+        p.blue {
+            color: blue;
+        }
+        p.big {
+            font-size: 18px;
+        }
+        a {
+            color: #2780bb;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Details</h1>
+        <img src="data:image/png;base64,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" alt="Profile Picture">
+        <table>
+            <tr>
+                <td><strong>Name:</strong></td>
+                <td>John Doe</td>
+            </tr>
+            <tr>
+                <td><strong>Email:</strong></td>
+                <td>john.doe@example.com</td>
+            </tr>
+            <tr>
+                <td><strong>Phone:</strong></td>
+                <td>+1 234 567 890</td>
+            </tr>
+        </table>
+        <form>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Send Message">
+        </form>
+        <p class="blue">For urgent matters, please call.</p>
+        <p class="big"><a href="#">Privacy Policy</a></p>
+    </div>
+</body>
+</html>
+
